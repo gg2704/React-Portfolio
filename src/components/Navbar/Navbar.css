@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@media(max-width:768px){
+    .navbar-nav {
+      width: 7rem;
+    }
+}
+:root {
+  --primary-white: #fff;
+  --primary-green: #1F6566;
+  --primary-dark: rgba(255,255,255,0);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  z-index: 2;
+}
+/***NAVBAR***/
+.logo {
+  width: 3.5rem;
+}
+
+/* MENU LINKS */
+nav a.nav-link {
+  letter-spacing: 0.04rem;
+  cursor: pointer;
+}
+
+.navbar-nav > li > a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: var(--primary-white) !important;
+  border-top: 0.1875rem solid var(--primary-dark)
+}
+
+.navbar-brand {
+  max-width: 17.25rem;
+  padding: 3 !important;
+  /* height: 6rem !important; */
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+  border-top: 0.1875rem solid var(--primary-green);
+
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid var(--primary-green);
+}
